@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khene Sipaserd – Links</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e4;--card:#fffaf0;--ink:#24352b;--mute:#6f7f73;--green:#4f7d5c;--green2:#3a6147;--line:#e3dcc7;--dot:79,125,92;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17211b;--card:#1f2c24;--ink:#eee8d6;--mute:#9aae9f;--green:#7fb08c;--green2:#a3cfae;--line:#2d3d33;--dot:127,176,140}}
+:root[data-theme="dark"]{--bg:#17211b;--card:#1f2c24;--ink:#eee8d6;--mute:#9aae9f;--green:#7fb08c;--green2:#a3cfae;--line:#2d3d33;--dot:127,176,140}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Thai",system-ui,sans-serif;min-height:100vh}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
+main{position:relative;max-width:460px;margin:0 auto;padding:36px 20px 48px;text-align:center}
+.avatar{width:92px;height:92px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;font-size:38px;font-weight:600;color:#fffaf0;background:linear-gradient(135deg,var(--green),var(--green2));box-shadow:0 0 0 5px var(--bg),0 0 0 7px var(--green);animation:pop .7s cubic-bezier(.2,1.3,.4,1) both}
+h1{font-size:22px;margin:0 0 2px;font-weight:600}.handle{color:var(--green);font-weight:500;margin:0 0 8px}.bio{color:var(--mute);margin:0 0 20px;font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 4px}
+.stat b{display:block;font-size:19px;color:var(--green2)}.stat span{font-size:12px;color:var(--mute)}
+.cta{display:block;width:100%;border:0;border-radius:16px;padding:15px;font:600 16px inherit;font-family:inherit;color:#fffaf0;background:linear-gradient(135deg,var(--green),var(--green2));cursor:pointer;margin-bottom:14px;transition:transform .2s,box-shadow .2s;animation:glow 3s ease-in-out infinite}
+.cta:hover{transform:translateY(-2px)}.cta:active{transform:scale(.98)}
+.link{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 16px;margin-bottom:10px;color:var(--ink);text-decoration:none;font:500 15px inherit;font-family:inherit;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s;opacity:0;animation:up .5s ease forwards}
+.link:hover{transform:translateY(-2px);border-color:var(--green);box-shadow:0 6px 16px rgba(79,125,92,.15)}
+.ico{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(79,125,92,.14);color:var(--green2);font-size:13px;font-weight:600;flex:none}
+.name{flex:1}.name small{display:block;color:var(--mute);font-weight:400;font-size:12px}
+.cnt{font-size:12px;color:var(--mute);background:var(--bg);border-radius:20px;padding:3px 9px}
+.tools{display:flex;gap:10px;margin-top:18px}
+.tool{flex:1;background:transparent;border:1px solid var(--green);color:var(--green2);border-radius:14px;padding:11px;font:500 14px inherit;font-family:inherit;cursor:pointer;transition:background .2s}
+.tool:hover{background:rgba(79,125,92,.12)}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:30px;font-size:14px;opacity:0;transition:.3s;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.sheet{position:fixed;inset:0;background:rgba(20,30,24,.45);display:none;align-items:flex-end;justify-content:center;z-index:5}
+.sheet.on{display:flex}.panel{background:var(--bg);width:100%;max-width:460px;border-radius:24px 24px 0 0;padding:22px 20px calc(22px + env(safe-area-inset-bottom,0px));animation:slide .3s ease}
+.panel h2{margin:0 0 14px;font-size:18px}.close{margin-top:6px;background:none;border:0;color:var(--mute);font-family:inherit;cursor:pointer;padding:8px}
+.foot{margin-top:22px;font-size:12px;color:var(--mute)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes slide{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(79,125,92,.35)}50%{box-shadow:0 0 0 8px rgba(79,125,92,0)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.link{opacity:1}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<main>
+  <div class="avatar">K</div>
+  <h1>Khene Sipaserd</h1>
+  <p class="handle">@Khene</p>
+  <p class="bio">Hi Everyone, my name is Khene 🌿</p>
+
+  <div class="stats">
+    <div class="stat"><b id="sViews">0</b><span>ผู้เข้าชม</span></div>
+    <div class="stat"><b id="sClicks">0</b><span>คลิกทั้งหมด</span></div>
+    <div class="stat"><b id="sTop">–</b><span>ยอดนิยม</span></div>
+  </div>
+
+  <button class="cta" id="ctaBtn">✉️ ติดต่อฉัน</button>
+
+  <div id="links"></div>
+
+  <div class="tools">
+    <button class="tool" id="shareBtn">↗ แชร์</button>
+    <button class="tool" id="copyBtn">⧉ คัดลอกลิงก์</button>
+  </div>
+  <div class="foot">Made with Claude · mock stats</div>
+</main>
+
+<div class="sheet" id="sheet"><div class="panel">
+  <h2>ติดต่อ Khene</h2>
+  <div id="contactList"></div>
+  <button class="close" id="closeBtn">ปิด</button>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+var LINKS=[
+ {k:"ig",ic:"IG",n:"Instagram",h:"@khene_cat",u:"https://www.instagram.com/khene_cat/",c:128},
+ {k:"tt1",ic:"TT",n:"TikTok",h:"@khene_tt2228",u:"https://www.tiktok.com/@khene_tt2228",c:214},
+ {k:"tt2",ic:"TT",n:"TikTok (อีกบัญชี)",h:"@khene.sipaserd",u:"https://www.tiktok.com/@khene.sipaserd",c:96},
+ {k:"fb",ic:"f",n:"Facebook",h:"Khene1267",u:"https://facebook.com/Khene1267",c:77},
+ {k:"x",ic:"X",n:"X (Twitter)",h:"@Khene_Sipaserd",u:"https://x.com/Khene_Sipaserd",c:52},
+ {k:"wa",ic:"WA",n:"WhatsApp",h:"@Khene_Sipaserd",u:"https://wa.me/Khene_Sipaserd",c:41}
+];
+var views=1284,toastT;
+function $(i){return document.getElementById(i)}
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove("on")},1800)}
+function total(){return LINKS.reduce(function(a,l){return a+l.c},0)}
+function topLink(){return LINKS.slice().sort(function(a,b){return b.c-a.c})[0].ic}
+function renderStats(){$("sClicks").textContent=total().toLocaleString();$("sTop").textContent=topLink()}
+function countUp(el,to){var s=null;function f(t){if(!s)s=t;var p=Math.min((t-s)/900,1);el.textContent=Math.round(to*p).toLocaleString();if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+function copyText(txt,msg){
+  try{navigator.clipboard.writeText(txt).then(function(){toast(msg)},function(){fallback()})}catch(e){fallback()}
+  function fallback(){var a=document.createElement("textarea");a.value=txt;document.body.appendChild(a);a.select();try{document.execCommand("copy");toast(msg)}catch(e){toast("คัดลอกไม่สำเร็จ")}a.remove()}
+}
+function hit(l,span){l.c++;span.textContent=l.c;renderStats()}
+var box=$("links");
+LINKS.forEach(function(l,i){
+  var el=document.createElement(l.copy?"button":"a");el.className="link";el.style.animationDelay=(0.25+i*0.08)+"s";
+  if(!l.copy){el.href=l.u;el.target="_blank";el.rel="noopener noreferrer"}
+  el.innerHTML='<span class="ico">'+l.ic+'</span><span class="name">'+l.n+'<small>'+l.h+'</small></span><span class="cnt">0</span>';
+  var span=el.querySelector(".cnt");span.textContent=l.c;
+  el.addEventListener("click",function(){hit(l,span);if(l.copy)copyText(l.copy,"คัดลอก WhatsApp แล้ว")});
+  box.appendChild(el);
+});
+countUp($("sViews"),views);renderStats();
+
+$("copyBtn").onclick=function(){copyText(location.href,"คัดลอกลิงก์แล้ว ✓")};
+$("shareBtn").onclick=function(){
+  if(navigator.share){navigator.share({title:"Khene Sipaserd",url:location.href}).catch(function(){})}
+  else copyText(location.href,"คัดลอกลิงก์เพื่อแชร์แล้ว ✓");
+};
+var cl=$("contactList");
+[["Instagram","@khene_cat","https://www.instagram.com/khene_cat/"],["Facebook","Khene1267","https://facebook.com/Khene1267"],["X (Twitter)","@Khene_Sipaserd","https://x.com/Khene_Sipaserd"]].forEach(function(c){
+  var a=document.createElement("a");a.className="link";a.style.opacity=1;a.style.animation="none";a.href=c[2];a.target="_blank";a.rel="noopener noreferrer";
+  a.innerHTML='<span class="name">'+c[0]+'<small>'+c[1]+'</small></span>';cl.appendChild(a);
+});
+$("ctaBtn").onclick=function(){$("sheet").classList.add("on")};
+$("closeBtn").onclick=function(){$("sheet").classList.remove("on")};
+$("sheet").onclick=function(e){if(e.target===this)this.classList.remove("on")};
+
+// minimal particles
+(function(){
+  if(window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+  var c=$("bg"),x=c.getContext("2d"),w,h,P=[];
+  function size(){w=c.width=innerWidth;h=c.height=innerHeight}
+  size();addEventListener("resize",size);
+  for(var i=0;i<26;i++)P.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2.5+1,v:Math.random()*.25+.08,d:Math.random()*6.28});
+  function rgb(){return getComputedStyle(document.documentElement).getPropertyValue("--dot").trim()||"79,125,92"}
+  function f(){x.clearRect(0,0,w,h);var col=rgb();
+    P.forEach(function(p){p.y-=p.v;p.d+=.01;p.x+=Math.sin(p.d)*.3;if(p.y<-5){p.y=h+5;p.x=Math.random()*w}
+      x.beginPath();x.arc(p.x,p.y,p.r,0,6.28);x.fillStyle="rgba("+col+",.22)";x.fill()});
+    requestAnimationFrame(f)}
+  f();
+})();
+</script>
+</body>
+</html>
